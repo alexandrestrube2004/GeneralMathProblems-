@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class FibonacciGenerator
+{
+    public static void main()
+    {
+        Scanner ler = new Scanner (System.in);
+        int v1, v2, nv, nr, cont;
+        
+        v1=0;
+        v2=1;
+        nv=0;
+        cont=0; 
+        
+         System.out.printf ("\n  Enter the number of repetitions:");
+         nr=ler.nextInt();
+         
+         System.out.printf ("\n %d", v1,"\n %d", v2);
+         
+        while (cont<nr)
+        {
+            nv = v1 + v2;
+            System.out.printf ("\n %d", nv);
+            v1=v2;
+            v2=nv;
+            cont++;
+        }
+        
+    }
+}
